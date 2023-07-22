@@ -106,9 +106,10 @@ li {
   }
 }
 .front-page {
-  background-image: url(../../img/portada-index.jpg);
+  background-image: url(https://unitedworldtransportation.com/wp-content/uploads/2022/08/are-low-rolling-resistance-truck-tires-worth-the-cost.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  filter: opacity(70%);
   width: 100%;
   height: 250px;
   margin-top: 60px;
@@ -116,7 +117,7 @@ li {
   align-items: center;
 }
 .front-page__text {
-  background-color: rgba(22, 22, 22, 0.178);
+  background-color: rgba(22, 22, 22, 0.808);
   box-shadow: 0px 0px 7px rgba(104, 104, 104, 0.192);
   color: #ffffff;
   font-size: 1.8rem;

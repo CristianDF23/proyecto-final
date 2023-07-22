@@ -1,4 +1,4 @@
-/*--NAVIGATION BAR--*/
+/*=====NAVIGATION BAR=====*/
 
 .navbar {
     &-toggler {
@@ -12,8 +12,8 @@
 
     &-nav {
         height: 100vh;
-        gap: 2rem;
         padding-left: 60px;
+        gap: 2rem;
     }
 
     &-brand {
@@ -24,6 +24,8 @@
 
 }
 
+/*--Links And Icons Navigation Bar--*/
+
 .nav-item {
     display: flex;
     align-items: center;
@@ -31,9 +33,9 @@
 
     &__link {
         text-decoration: none;
-        color: $titles-nav;
         font-weight: 500;
         font-size: 1.5rem;
+        color: $titles-nav;
 
         &:hover {
             font-weight: bolder;

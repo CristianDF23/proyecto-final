@@ -1,4 +1,4 @@
-/*--BASES--*/
+/*=====BASES=====*/
 /*--Variables--*/
 
 $font-main: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,6 +21,9 @@ $titles-nav: #0e2431;
 
 body {
     font-family: $font-main;
+    background-image: url(../img/bg-body.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 a {
@@ -32,11 +35,6 @@ ul,
 li {
     list-style: none;
 }
-
-.audio-for-speech{
-    display: none;
-}
-
 
 /*--Icons and General Titles--*/
 

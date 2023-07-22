@@ -472,7 +472,7 @@ li {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url("../../img/name.ico");
+  background-image: url("/img/name.ico");
 }
 .form-input__phone {
   width: 300px;
@@ -485,7 +485,7 @@ li {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url("../../img/cel.ico");
+  background-image: url("/img/cel.ico");
 }
 .form-input__email {
   width: 300px;
@@ -498,7 +498,7 @@ li {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url("../../img/email.ico");
+  background-image: url("/img/email.ico");
 }
 .form-input__message {
   width: 300px;
@@ -511,10 +511,10 @@ li {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url("../../img/coment.ico");
+  background-image: url("/img/coment.ico");
 }
 .form-input__send {
-  background-image: url("../../img/send.ico");
+  background-image: url("/img/send.ico");
   background-repeat: no-repeat;
   background-color: white;
   color: transparent;

@@ -106,7 +106,7 @@ li {
   }
 }
 .front-page {
-  background-image: url(https://unitedworldtransportation.com/wp-content/uploads/2022/08/are-low-rolling-resistance-truck-tires-worth-the-cost.jpg);
+  background-image: url("https://unitedworldtransportation.com/wp-content/uploads/2022/08/are-low-rolling-resistance-truck-tires-worth-the-cost.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   filter: opacity(70%);

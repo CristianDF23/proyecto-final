@@ -3,13 +3,11 @@
 /*--Cards--*/
 
 .container-products {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
-    row-gap: 2rem;
-    column-gap: .5rem;
+    gap: 1.4rem;
 
     .products {
         width: 305px;

@@ -80,26 +80,26 @@
 
     &__name {
         @include input-area;
-        background-image: url("../../img/name.ico");
+        background-image: url(../../img/name.ico);
     }
 
     &__phone {
         @include input-area;
-        background-image: url("/img/cel.ico");
+        // background-image: url("/img/cel.ico");
     }
 
     &__email {
         @include input-area;
-        background-image: url("/img/email.ico");
+        // background-image: url("/img/email.ico");
     }
 
     &__message {
         @include input-area;
-        background-image: url("/img/coment.ico");
+        // background-image: url("/img/coment.ico");
     }
 
     &__send {
-        background-image: url("/img/send.ico");
+        // background-image: url("/img/send.ico");
         background-repeat: no-repeat;
         background-color: transparent;
         color: transparent;

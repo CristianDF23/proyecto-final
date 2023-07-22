@@ -398,5 +398,210 @@ li {
     text-align: justify;
   }
 }
+/*=====CONTACT=====*/
+.contact-information {
+  display: grid;
+  grid-template-areas: "datos datos datos datos" "formulario formulario formulario formulario" "ubicacion ubicacion ubicacion ubicacion";
+  gap: 2rem;
+}
+
+/*--Data Section--*/
+@keyframes dat {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.data {
+  grid-area: datos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: dat 3s both;
+}
+.data__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.data__list .list__information {
+  font-size: 1rem;
+  color: rgba(2, 32, 77, 0.5333333333);
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+/*--Form Section--*/
+@keyframes form {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.form {
+  grid-area: formulario;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: form 3s both;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.form-input__name {
+  width: 300px;
+  padding: 12px 20px 12px 40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-image: url("../../img/name.ico");
+}
+.form-input__phone {
+  width: 300px;
+  padding: 12px 20px 12px 40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-image: url("../../img/cel.ico");
+}
+.form-input__email {
+  width: 300px;
+  padding: 12px 20px 12px 40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-image: url("../../img/email.ico");
+}
+.form-input__message {
+  width: 300px;
+  padding: 12px 20px 12px 40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-image: url("../../img/coment.ico");
+}
+.form-input__send {
+  background-image: url("../../img/send.ico");
+  background-repeat: no-repeat;
+  background-color: white;
+  color: transparent;
+  border: none;
+  width: 34px;
+  height: 31px;
+  cursor: pointer;
+}
+
+/*--Ubication Section--*/
+.ubication {
+  grid-area: ubicacion;
+  margin-top: 15px;
+  color: rgba(2, 32, 77, 0.5333333333);
+}
+.ubication__title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.ubication .ubication-container {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.ubication .ubication-container__map {
+  margin-top: 10px;
+  width: 100%;
+  height: 150px;
+  border: 0;
+  opacity: 0.9;
+}
+.ubication .ubication-container .icon {
+  display: none;
+}
+
+/*--View Tablet and Desktop--*/
+@media (min-width: 768px) {
+  .contact-information {
+    grid-template-areas: "datos formulario formulario formulario " "datos formulario formulario formulario " "ubicacion ubicacion ubicacion ubicacion";
+  }
+  .data__list {
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    padding-top: 20px;
+    gap: 3rem;
+    margin-left: 20%;
+  }
+  .data__list .list__information {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .data__list .list__information #medPag {
+    display: none;
+  }
+  .form {
+    margin-top: 30px;
+    justify-content: flex-start;
+  }
+  .form .form-input__name, .form .form-input__phone, .form .form-input__email, .form .form-input__message {
+    width: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  .data__list {
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    padding-top: 20px;
+    gap: 3rem;
+  }
+  .form-input__send {
+    background: none;
+    border: 2px solid rgba(0, 0, 0, 0.247);
+    width: 80px;
+    color: #616161;
+  }
+  .form-input__send:hover {
+    background: #5389ac;
+    border: 2px solid;
+    width: 80px;
+    color: whitesmoke;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

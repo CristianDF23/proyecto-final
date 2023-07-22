@@ -80,7 +80,7 @@
 
     &__name {
         @include input-area;
-        background-image: url("/img/name.ico");
+        background-image: url("../../img/name.ico");
     }
 
     &__phone {
@@ -101,14 +101,13 @@
     &__send {
         background-image: url("/img/send.ico");
         background-repeat: no-repeat;
-        background-color: white;
+        background-color: transparent;
         color: transparent;
         border: none;
         width: 34px;
         height: 31px;
         cursor: pointer;
     }
-
 }
 
 /*--Ubication Section--*/

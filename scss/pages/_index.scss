@@ -43,15 +43,50 @@
 /*--Section Services--*/
 
 @keyframes move-r {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0);}
+}
 
-    100% {
-        transform: translate(0);
-        opacity: 1;
-    }
+.one {
+    animation-name: move-r;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.two {
+    animation-name: move-r;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.three {
+    animation-name: move-r;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.four {
+    animation-name: move-r;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+.five {
+    animation-name: move-r;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.six {
+    animation-name: move-r;
+    animation-duration: 3s;
+    animation-delay: 6s;
+}
+
+.seven {
+    animation-name: move-r;
+    animation-duration: 3s;
+    animation-delay: 7s;
 }
 
 
@@ -69,7 +104,6 @@
     flex-direction: column;
     align-items: center;
     gap: 0.4rem;
-    animation: move-r 4s 1s;
 
     &__img {
         margin-top: 15px;
@@ -105,19 +139,6 @@
 
     .service--last {
         grid-column: 1/4;
-    }
-
-    .rigth,
-    .rigth-two,
-    .rigth-three,
-    .rigth-four {
-        animation: none;
-    }
-
-    .left,
-    .left-two,
-    .left-three {
-        animation: none;
     }
 
 }

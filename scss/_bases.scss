@@ -1,0 +1,81 @@
+/*--BASES--*/
+/*--Variables--*/
+
+$font-main: Verdana, Geneva, Tahoma, sans-serif;
+$color-title: #02204D;
+$color-text: #02204d88;
+$shadow-img: 5px 5px 5px grey;
+$color-footer: #02204D;
+$text-footer: whitesmoke;
+$title-footer: #e7c374;
+$text-frontpage: #ffffff;
+$titles-nav: #0e2431;
+
+/*--Page Reset--*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.audio-for-speech{
+    display: none;
+}
+
+
+/*--Icons and General Titles--*/
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.titles {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-title;
+    text-align: center;
+}
+
+/*--Desktop and Tablet View--*/
+
+@media(min-width:768px) {
+
+    .titles {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:1200px) {
+
+    .titles {
+        margin-top: 30px;
+    }
+}
+
+/*--General Container--*/
+
+@media (min-width: 1200px) {
+    .general-container {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

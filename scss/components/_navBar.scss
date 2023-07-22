@@ -1,0 +1,64 @@
+/*--NAVIGATION BAR--*/
+
+.navbar {
+    &-toggler {
+        border-radius: 0;
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    &-nav {
+        height: 100vh;
+        gap: 2rem;
+        padding-left: 60px;
+    }
+
+    &-brand {
+        &__img {
+            width: 150px;
+        }
+    }
+
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &__link {
+        text-decoration: none;
+        color: $titles-nav;
+        font-weight: 500;
+        font-size: 1.5rem;
+
+        &:hover {
+            font-weight: bolder;
+            color: $titles-nav;
+        }
+
+    }
+}
+
+/*--Dektop View--*/
+
+
+@media(min-width:1200px) {
+    .navbar {
+        &-nav {
+            height: 30px;
+
+            .icon {
+                display: none;
+            }
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

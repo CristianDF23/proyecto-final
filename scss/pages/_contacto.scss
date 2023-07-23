@@ -80,7 +80,7 @@
 
     &__name {
         @include input-area;
-        background-image:$icon-name;
+        background-image:url(/img/name.ico);
 
     }
 

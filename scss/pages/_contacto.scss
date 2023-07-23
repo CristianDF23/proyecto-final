@@ -80,27 +80,26 @@
 
     &__name {
         @include input-area;
-        background-image:url(/img/name.ico);
-
+        background-image: $icon-name;
     }
 
     &__phone {
         @include input-area;
-        background-image:url(/img/cel.ico) ;
+        background-image:$icon-tel ;
     }
 
     &__email {
         @include input-area;
-        background-image:url(/img/email.ico);
+        background-image:$icon-email;
     }
 
     &__message {
         @include input-area;
-        background-image:url(/img/coment.ico);
+        background-image:$icon-msg;
     }
 
     &__send {
-        background-image:url(/img/send.ico);
+        background-image:$icon-send;
         background-repeat: no-repeat;
         background-color: transparent;
         color: transparent;

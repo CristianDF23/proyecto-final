@@ -80,7 +80,7 @@
 
     &__name {
         @include input-area;
-        background-image: url("/img/name.ico");
+        background-image: url(/img/name.ico);
     }
 
     &__phone {

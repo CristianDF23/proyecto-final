@@ -1,7 +1,5 @@
 /*=====CONTACT=====*/
 
-$icon-name: url("../../img/name.ico");
-
 .contact-information {
     display: grid;
     grid-template-areas:
@@ -82,7 +80,7 @@ $icon-name: url("../../img/name.ico");
 
     &__name {
         @include input-area;
-        background-image: $icon-name;
+        background-image: url("/img/name.ico");
     }
 
     &__phone {

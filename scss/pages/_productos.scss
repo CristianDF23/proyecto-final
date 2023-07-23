@@ -98,16 +98,16 @@
 
 /*--View Tablet and Desktop--*/
 
-@media (min-width:768px) {
-    .container-products {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+// @media (min-width:768px) {
+//     .container-products {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
 
-@media (min-width:1200px) {
-    .container-products {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+// @media (min-width:1200px) {
+//     .container-products {
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+// }

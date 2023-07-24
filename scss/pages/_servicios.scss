@@ -6,8 +6,16 @@
 
     &-header {
         border: 2px solid rgba(0, 0, 0, 0.267);
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 30px;
+        border-radius: 100px;
+
+        &:hover{
+            background-color: rgba(128, 128, 128, 0.24);
+            font-weight: bold;
+        }
+
+        img{
+            display: none;
+        }
 
     }
 
@@ -20,12 +28,18 @@
     &-button {
         font-size: 1.3rem;
         background-color: transparent;
+        color: $color-title;
+
+        &:hover{
+            font-weight: bold;
+        }
 
         &:focus {
             border: none;
             background-color: transparent;
             box-shadow: none;
-            color: black;
+            color: $color-title;
+            
         }
     }
 
@@ -36,14 +50,15 @@
         gap: 1.5rem;
 
         p {
-            text-align: justify;
-        }
-
-        img {
-            display: none;
+            width: 90%;
+            text-align: start;
+            font-size: 1.3rem;
+            font-weight: bolder;
+            color: $color-text;
         }
     }
 }
+
 
 #accodrion-service {
     display: flex;
@@ -83,13 +98,26 @@
 }
 
 
-
 /*--View Tablet and Desktop--*/
 
 @media (min-width:768px) {
-    .accordion-body img {
-        display: block;
-        width: 50px;
-        height: 50px;
+
+    .accordion-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 15px;
+        padding-top: 2px;
+
+        img {
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .w-100{
+        width: 75% !important;
     }
 }
+

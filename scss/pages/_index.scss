@@ -145,6 +145,17 @@
 
 @media(min-width:768px) {
 
+    @keyframes move-up {
+        0%{
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
     .service-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -154,15 +165,41 @@
     .service--last {
         grid-column: 1/4;
     }
-
-    .one,
-    .two,
-    .three,
-    .four,
-    .five,
-    .six,
+    
+    .one{
+        animation-name: move-up;
+        animation-duration: 2s;
+        animation-delay: 2s;
+    }
+    .two{
+        animation-name: move-up;
+        animation-duration: 2s;
+        animation-delay: 3s;
+    }
+    .three{
+        animation-name: move-up;
+        animation-duration: 2s;
+        animation-delay: 4s;
+    }
+    .four{
+        animation-name: move-up;
+        animation-duration: 2s;
+        animation-delay: 5s;
+    }
+    .five{
+        animation-name: move-up;
+        animation-duration: 2s;
+        animation-delay: 6s;
+    }
+    .six{
+        animation-name: move-up;
+        animation-duration: 2s;
+        animation-delay: 7s;
+    }
     .seven {
-        animation: none
+        animation-name: move-up;
+        animation-duration: 2s;
+        animation-delay: 8s;
     }
 
 }

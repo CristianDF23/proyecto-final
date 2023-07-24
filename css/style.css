@@ -388,6 +388,16 @@ li {
 }
 /*--View Tablet and Desktop--*/
 @media (min-width: 768px) {
+  @keyframes move-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   .service-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -396,14 +406,40 @@ li {
   .service--last {
     grid-column: 1/4;
   }
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
+  .one {
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-delay: 2s;
+  }
+  .two {
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-delay: 3s;
+  }
+  .three {
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-delay: 4s;
+  }
+  .four {
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-delay: 5s;
+  }
+  .five {
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-delay: 6s;
+  }
+  .six {
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-delay: 7s;
+  }
   .seven {
-    animation: none;
+    animation-name: move-up;
+    animation-duration: 2s;
+    animation-delay: 8s;
   }
 }
 @media (min-width: 1200px) {
@@ -632,6 +668,14 @@ li {
 }
 /*=====PRODUCTS=====*/
 /*--Cards--*/
+@keyframes transparent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .container-products {
   width: 100%;
   display: flex;
@@ -639,6 +683,7 @@ li {
   justify-content: center;
   align-items: center;
   gap: 1.4rem;
+  animation: transparent 3s 1s both;
 }
 .container-products .card {
   width: 300px;
@@ -812,8 +857,14 @@ li {
 }
 .accordion-header {
   border: 2px solid rgba(0, 0, 0, 0.267);
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-radius: 100px;
+}
+.accordion-header:hover {
+  background-color: rgba(128, 128, 128, 0.24);
+  font-weight: bold;
+}
+.accordion-header img {
+  display: none;
 }
 .accordion-item {
   background-color: transparent;
@@ -822,12 +873,16 @@ li {
 .accordion-button {
   font-size: 1.3rem;
   background-color: transparent;
+  color: #02204D;
+}
+.accordion-button:hover {
+  font-weight: bold;
 }
 .accordion-button:focus {
   border: none;
   background-color: transparent;
   box-shadow: none;
-  color: black;
+  color: #02204D;
 }
 .accordion-body {
   display: flex;
@@ -836,10 +891,11 @@ li {
   gap: 1.5rem;
 }
 .accordion-body p {
-  text-align: justify;
-}
-.accordion-body img {
-  display: none;
+  width: 90%;
+  text-align: start;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: rgba(2, 32, 77, 0.5333333333);
 }
 
 #accodrion-service {
@@ -884,10 +940,20 @@ li {
 
 /*--View Tablet and Desktop--*/
 @media (min-width: 768px) {
-  .accordion-body img {
+  .accordion-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 2px;
+  }
+  .accordion-header img {
     display: block;
     width: 50px;
     height: 50px;
+  }
+  .w-100 {
+    width: 75% !important;
   }
 }
 

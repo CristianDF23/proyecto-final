@@ -2,6 +2,15 @@
 
 /*--Cards--*/
 
+@keyframes transparent{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .container-products {
     width: 100%;
     display: flex;
@@ -9,6 +18,7 @@
     justify-content: center;
     align-items: center;
     gap: 1.4rem;
+    animation: transparent 3s 1s both;
 
     .card {
         width: 300px;

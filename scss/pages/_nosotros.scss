@@ -1,0 +1,102 @@
+/*=====ABOUT US=====*/
+
+.company {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &__img {
+        width: 300px;
+        height: 300px;
+        filter: drop-shadow(8px 8px 10px rgb(63, 63, 63));
+    }
+
+    &__paragraph {
+        border: $shadow-img;
+        background-color:rgba(222, 184, 135, 0.055);
+        color: $color-text;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-align: justify;
+        padding: 20px;
+    }
+
+}
+
+/*--View Tablet and Desktop--*/
+
+@media (min-width:590px) and (max-width:900px) {
+    .company__img {
+        width: 50%;
+        height: 35%;
+    }
+}
+
+@media (min-width:768px){
+    .company__paragraph{
+        max-width: 768px;
+        text-align: justify;
+    }
+}
+
+@media (min-width:901px) {
+    .company__img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media (min-width:1200px) {
+    .company {
+        display: grid;
+        grid-template-areas:
+            'imagen imagen historia historia'
+            'imagen imagen texto-hist texto-hist'
+            'mision mision vision vision'
+            'texto-mision texto-mision texto-vision texto-vision';
+        justify-items: center;
+        margin: 40px 10px 10px 10px;
+
+
+        &__img {
+            width: 80%;
+            grid-area: imagen;
+        }
+
+        &__history {
+            width: 100%;
+            grid-area: historia;
+        }
+
+        &__task {
+            width: 100%;
+            grid-area: mision;
+        }
+
+        &__vision {
+            width: 100%;
+            grid-area: vision;
+        }
+
+        &__paragraph {
+            width: 100%;
+            grid-area: texto-hist;
+            text-align: justify;
+
+            &--task {
+                width: 100%;
+                grid-area: texto-mision;
+            }
+
+            &--vision {
+                width: 100%;
+                grid-area: texto-vision;
+            }
+        }
+
+    }
+
+}

@@ -43,50 +43,64 @@
 /*--Section Services--*/
 
 @keyframes move-r {
-    0%{transform: translateX(-100%);}
-    100%{transform: translateX(0);}
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .one {
     animation-name: move-r;
     animation-duration: 3s;
     animation-delay: 1s;
+    animation-fill-mode: both;
 }
 
 .two {
     animation-name: move-r;
     animation-duration: 3s;
     animation-delay: 2s;
+    animation-fill-mode: both;
 }
 
 .three {
     animation-name: move-r;
     animation-duration: 3s;
     animation-delay: 3s;
+    animation-fill-mode: both;
 }
 
 .four {
     animation-name: move-r;
     animation-duration: 3s;
     animation-delay: 4s;
+    animation-fill-mode: both;
 }
 
 .five {
     animation-name: move-r;
     animation-duration: 3s;
     animation-delay: 5s;
+    animation-fill-mode: both;
 }
 
 .six {
     animation-name: move-r;
     animation-duration: 3s;
     animation-delay: 6s;
+    animation-fill-mode: both;
 }
 
 .seven {
     animation-name: move-r;
     animation-duration: 3s;
     animation-delay: 7s;
+    animation-fill-mode: both;
 }
 
 
@@ -141,8 +155,14 @@
         grid-column: 1/4;
     }
 
-    .one, .two, .three, .four, .five, .six, .seven{
-        animation:none
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven {
+        animation: none
     }
 
 }

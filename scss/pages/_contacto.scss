@@ -12,8 +12,15 @@
 /*--Data Section--*/
 
 @keyframes dat {
-    0%{transform: translateX(-100%);}
-    100%{transform: translateX(0);}
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .data {
@@ -31,7 +38,8 @@
         gap: 1rem;
 
         .list__information {
-            font-size: 1rem;
+            font-size: .9rem;
+            font-weight: 600;
             color: $color-text;
             display: flex;
             align-items: center;
@@ -44,8 +52,15 @@
 /*--Form Section--*/
 
 @keyframes form {
-    0%{transform: translateY(100%);}
-    100%{transform: translateX(0);}
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .form {
@@ -80,26 +95,26 @@
 
     &__name {
         @include input-area;
-        background-image:$icon-name;
+        background-image: $icon-name;
     }
 
     &__phone {
         @include input-area;
-        background-image:$icon-tel ;
+        background-image: $icon-tel ;
     }
 
     &__email {
         @include input-area;
-        background-image:$icon-email;
+        background-image: $icon-email;
     }
 
     &__message {
         @include input-area;
-        background-image:$icon-msg;
+        background-image: $icon-msg;
     }
 
     &__send {
-        background-image:$icon-send;
+        background-image: $icon-send;
         background-repeat: no-repeat;
         background-color: transparent;
         color: transparent;
@@ -139,7 +154,7 @@
             opacity: 0.9;
         }
 
-        .icon{
+        .icon {
             display: none;
         }
 
@@ -166,7 +181,6 @@
 
         .list__information {
             font-size: 1rem;
-            font-weight: 500;
 
             #medPag {
                 display: none;

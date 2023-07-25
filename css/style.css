@@ -754,13 +754,59 @@ li {
   background-color: #02204d;
 }
 
+/*--Carousel--*/
+#carousel-products {
+  display: none;
+}
+
 /*--View Tablet and Desktop--*/
+@keyframes price {
+  0% {
+    color: black;
+    font-weight: bold;
+  }
+  100% {
+    color: black;
+    font-weight: bold;
+    transform: scale(1.2);
+  }
+}
 @media (min-width: 768px) {
   .container-products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
+  }
+  #carousel-products {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-image: linear-gradient(140deg, rgba(6, 16, 61, 0.7333333333) 0%, #b6b3c7 70%, rgba(238, 238, 238, 0.5333333333) 90%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+    margin-top: 40px;
+    display: block;
+  }
+  .carousel-item {
+    width: 100%;
+    padding: 30px;
+    margin-left: 50px;
+  }
+  .carousel-item img {
+    margin-left: 15px;
+  }
+  .carousel-item div {
+    transform: translateX(150px) translateY(-70px) rotate(-10deg);
+    width: 40%;
+  }
+  .carousel-item div h5 {
+    font-size: 200%;
+    animation: price 0.8s ease-in infinite alternate-reverse;
+  }
+  .carousel-item div p {
+    font-size: 130%;
+    font-weight: bold;
   }
 }
 @media (min-width: 1200px) {
@@ -770,6 +816,17 @@ li {
   }
 }
 /*=====ABOUT US=====*/
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .company {
   margin-top: 20px;
   display: flex;
@@ -791,6 +848,22 @@ li {
   font-weight: 500;
   text-align: justify;
   padding: 20px;
+  animation: opacity 3s 1s both;
+}
+.company__paragraph--task {
+  animation: opacity 3s 2s both;
+}
+.company__paragraph--vision {
+  animation: opacity 3s 3s both;
+}
+.company__history {
+  animation: opacity 3s 1s both;
+}
+.company__task {
+  animation: opacity 3s 2s both;
+}
+.company__vision {
+  animation: opacity 3s 3s both;
 }
 
 /*--View Tablet and Desktop--*/

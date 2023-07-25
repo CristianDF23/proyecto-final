@@ -1,5 +1,19 @@
 /*=====ABOUT US=====*/
 
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 .company {
     margin-top: 20px;
     display: flex;
@@ -22,8 +36,28 @@
         font-weight: 500;
         text-align: justify;
         padding: 20px;
+        animation:opacity 3s 1s both;
+
+        &--task{
+            animation:opacity 3s 2s both;
+        }
+
+        &--vision{
+            animation:opacity 3s 3s both;
+        }
     }
 
+    &__history{
+        animation:opacity 3s 1s both;
+    }
+
+    &__task{
+        animation:opacity 3s 2s both;
+    }
+
+    &__vision{
+        animation:opacity 3s 3s both;
+    }
 }
 
 /*--View Tablet and Desktop--*/

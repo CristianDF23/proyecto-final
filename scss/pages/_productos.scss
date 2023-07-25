@@ -2,11 +2,12 @@
 
 /*--Cards--*/
 
-@keyframes transparent{
-    0%{
+@keyframes transparent {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -103,7 +104,27 @@
     }
 }
 
+/*--Carousel--*/
+
+#carousel-products {
+    display: none;
+}
+
 /*--View Tablet and Desktop--*/
+
+@keyframes price {
+    0% {
+        color: black;
+        font-weight: bold;
+    }
+
+
+    100% {
+        color: black;
+        font-weight: bold;
+        transform: scale(1.2);
+    }
+}
 
 @media (min-width:768px) {
     .container-products {
@@ -112,6 +133,47 @@
         align-items: center;
         justify-items: center;
     }
+
+    #carousel-products {
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-image: linear-gradient(140deg, #06103dbb 0%, #b6b3c7 70%, #eeeeee88 90%);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+        margin-top: 40px;
+        display: block;
+    }
+
+    .carousel-item {
+
+        width: 100%;
+        padding: 30px;
+        margin-left: 50px;
+        
+
+        img {
+            margin-left: 15px;
+        }
+
+        div {
+            transform: translateX(150px) translateY(-70px) rotate(-10deg);
+            width: 40%;
+
+            h5 {
+                font-size: 200%;
+                animation: price .8s ease-in infinite alternate-reverse;
+            }
+
+            p{
+                font-size: 130%;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+
 }
 
 @media (min-width:1200px) {

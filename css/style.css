@@ -288,7 +288,7 @@ li {
   padding: 20px;
   font-size: 1.3rem;
   font-weight: 500;
-  color: rgba(2, 32, 77, 0.5333333333);
+  color: rgba(2, 32, 77, 0.662745098);
   text-align: justify;
 }
 
@@ -492,7 +492,7 @@ li {
 .data__list .list__information {
   font-size: 0.9rem;
   font-weight: 600;
-  color: rgba(2, 32, 77, 0.5333333333);
+  color: rgba(2, 32, 77, 0.662745098);
   display: flex;
   align-items: center;
   gap: 0.7rem;
@@ -592,7 +592,7 @@ li {
 .ubication {
   grid-area: ubicacion;
   margin-top: 15px;
-  color: rgba(2, 32, 77, 0.5333333333);
+  color: rgba(2, 32, 77, 0.662745098);
 }
 .ubication__title {
   text-align: center;
@@ -843,7 +843,7 @@ li {
 .company__paragraph {
   border: 5px 5px 5px grey;
   background-color: rgba(222, 184, 135, 0.055);
-  color: rgba(2, 32, 77, 0.5333333333);
+  color: rgba(2, 32, 77, 0.662745098);
   font-size: 1.3rem;
   font-weight: 500;
   text-align: justify;
@@ -968,7 +968,7 @@ li {
   text-align: start;
   font-size: 1.3rem;
   font-weight: bolder;
-  color: rgba(2, 32, 77, 0.5333333333);
+  color: rgba(2, 32, 77, 0.662745098);
 }
 
 #accodrion-service {

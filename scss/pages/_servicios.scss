@@ -8,12 +8,12 @@
         border: 2px solid rgba(0, 0, 0, 0.267);
         border-radius: 100px;
 
-        &:hover{
+        &:hover {
             background-color: rgba(128, 128, 128, 0.24);
             font-weight: bold;
         }
 
-        img{
+        img {
             display: none;
         }
 
@@ -30,7 +30,7 @@
         background-color: transparent;
         color: $color-title;
 
-        &:hover{
+        &:hover {
             font-weight: bold;
         }
 
@@ -39,7 +39,7 @@
             background-color: transparent;
             box-shadow: none;
             color: $color-title;
-            
+
         }
     }
 
@@ -67,42 +67,36 @@
 
 }
 
-@keyframes accordion{
-    0%{
+@mixin accordion-animation {
+    animation: accordion 2s both;
+}
+
+@keyframes accordion {
+    0% {
         transform: translateX(-100%);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
-#flush-headingOne{
-    animation: accordion 2s both;
+@for $i from 1 through 6 {
+    #flush-heading#{$i} {
+        @include accordion-animation;
+        animation-delay: $i + 1 + s;
+    }
 }
-#flush-headingTwo{
-    animation: accordion 2s 1s both;
-}
-#flush-headingThree{
-    animation: accordion 2s 2s both;
-}
-#flush-headingFour{
-    animation: accordion 2s 3s both;
-}
-#flush-headingFive{
-    animation: accordion 2s 4s both;
-}
-#flush-headingSix{
-    animation: accordion 2s 5s both;
-}
+
 
 
 /*--View Tablet and Desktop--*/
 
 @media (min-width:768px) {
 
-    .accordion-header{
+    .accordion-header {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -116,8 +110,7 @@
         }
     }
 
-    .w-100{
+    .w-100 {
         width: 75% !important;
     }
 }
-

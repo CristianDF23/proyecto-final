@@ -2,6 +2,8 @@
 
 /*--Cards--*/
 
+/*--Animation Cards--*/
+
 @keyframes transparent {
     0% {
         opacity: 0;
@@ -112,6 +114,58 @@
 
 /*--View Tablet and Desktop--*/
 
+/*--Animation Carousel--*/
+
+@keyframes input{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    45%{
+        transform: translate(0);
+    }
+
+    50%{
+        transform: translateX(-50px);
+    }
+
+    55%{
+        transform: translate(0);
+    }
+
+    60%{
+        transform: translateX(-40px);
+    }
+
+    65%{
+        transform: translate(0);
+    }
+
+    70%{
+        transform: translateX(-30px);
+    }
+
+    75%{
+        transform: translate(0);
+    }
+
+    80%{
+        transform: translateX(-20px);
+    }
+
+    85%{
+        transform: translate(0);
+    }
+
+    90%{
+        transform: translateX(-10px);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+
 @keyframes price {
     0% {
         color: black;
@@ -143,6 +197,7 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
         margin-top: 40px;
         display: block;
+        animation: input 2s ease-in-out both;
     }
 
     .carousel-item {

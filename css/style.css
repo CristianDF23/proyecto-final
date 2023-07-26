@@ -9,7 +9,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url(../img/bg-body.png);
+  background-image: url("../img/bg-body.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -303,53 +303,39 @@ li {
     opacity: 1;
   }
 }
-.one {
-  animation-name: move-r;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-}
-
-.two {
-  animation-name: move-r;
-  animation-duration: 3s;
+.service-1 {
+  animation: move-r 2s both;
   animation-delay: 2s;
-  animation-fill-mode: both;
 }
 
-.three {
-  animation-name: move-r;
-  animation-duration: 3s;
+.service-2 {
+  animation: move-r 2s both;
   animation-delay: 3s;
-  animation-fill-mode: both;
 }
 
-.four {
-  animation-name: move-r;
-  animation-duration: 3s;
+.service-3 {
+  animation: move-r 2s both;
   animation-delay: 4s;
-  animation-fill-mode: both;
 }
 
-.five {
-  animation-name: move-r;
-  animation-duration: 3s;
+.service-4 {
+  animation: move-r 2s both;
   animation-delay: 5s;
-  animation-fill-mode: both;
 }
 
-.six {
-  animation-name: move-r;
-  animation-duration: 3s;
+.service-5 {
+  animation: move-r 2s both;
   animation-delay: 6s;
-  animation-fill-mode: both;
 }
 
-.seven {
-  animation-name: move-r;
-  animation-duration: 3s;
+.service-6 {
+  animation: move-r 2s both;
   animation-delay: 7s;
-  animation-fill-mode: both;
+}
+
+.service-7 {
+  animation: move-r 2s both;
+  animation-delay: 8s;
 }
 
 .service-container {
@@ -398,6 +384,34 @@ li {
       opacity: 1;
     }
   }
+  .service-1 {
+    animation: move-up 2s both;
+    animation-delay: 2s;
+  }
+  .service-2 {
+    animation: move-up 2s both;
+    animation-delay: 3s;
+  }
+  .service-3 {
+    animation: move-up 2s both;
+    animation-delay: 4s;
+  }
+  .service-4 {
+    animation: move-up 2s both;
+    animation-delay: 5s;
+  }
+  .service-5 {
+    animation: move-up 2s both;
+    animation-delay: 6s;
+  }
+  .service-6 {
+    animation: move-up 2s both;
+    animation-delay: 7s;
+  }
+  .service-7 {
+    animation: move-up 2s both;
+    animation-delay: 8s;
+  }
   .service-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -405,41 +419,6 @@ li {
   }
   .service--last {
     grid-column: 1/4;
-  }
-  .one {
-    animation-name: move-up;
-    animation-duration: 2s;
-    animation-delay: 2s;
-  }
-  .two {
-    animation-name: move-up;
-    animation-duration: 2s;
-    animation-delay: 3s;
-  }
-  .three {
-    animation-name: move-up;
-    animation-duration: 2s;
-    animation-delay: 4s;
-  }
-  .four {
-    animation-name: move-up;
-    animation-duration: 2s;
-    animation-delay: 5s;
-  }
-  .five {
-    animation-name: move-up;
-    animation-duration: 2s;
-    animation-delay: 6s;
-  }
-  .six {
-    animation-name: move-up;
-    animation-duration: 2s;
-    animation-delay: 7s;
-  }
-  .seven {
-    animation-name: move-up;
-    animation-duration: 2s;
-    animation-delay: 8s;
   }
 }
 @media (min-width: 1200px) {
@@ -668,6 +647,7 @@ li {
 }
 /*=====PRODUCTS=====*/
 /*--Cards--*/
+/*--Animation Cards--*/
 @keyframes transparent {
   0% {
     opacity: 0;
@@ -760,6 +740,45 @@ li {
 }
 
 /*--View Tablet and Desktop--*/
+/*--Animation Carousel--*/
+@keyframes input {
+  0% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  55% {
+    transform: translate(0);
+  }
+  60% {
+    transform: translateX(-40px);
+  }
+  65% {
+    transform: translate(0);
+  }
+  70% {
+    transform: translateX(-30px);
+  }
+  75% {
+    transform: translate(0);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  85% {
+    transform: translate(0);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 @keyframes price {
   0% {
     color: black;
@@ -787,6 +806,7 @@ li {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
     margin-top: 40px;
     display: block;
+    animation: input 2s ease-in-out both;
   }
   .carousel-item {
     width: 100%;
@@ -987,28 +1007,34 @@ li {
     opacity: 1;
   }
 }
-#flush-headingOne {
+#flush-heading1 {
   animation: accordion 2s both;
+  animation-delay: 2s;
 }
 
-#flush-headingTwo {
-  animation: accordion 2s 1s both;
+#flush-heading2 {
+  animation: accordion 2s both;
+  animation-delay: 3s;
 }
 
-#flush-headingThree {
-  animation: accordion 2s 2s both;
+#flush-heading3 {
+  animation: accordion 2s both;
+  animation-delay: 4s;
 }
 
-#flush-headingFour {
-  animation: accordion 2s 3s both;
+#flush-heading4 {
+  animation: accordion 2s both;
+  animation-delay: 5s;
 }
 
-#flush-headingFive {
-  animation: accordion 2s 4s both;
+#flush-heading5 {
+  animation: accordion 2s both;
+  animation-delay: 6s;
 }
 
-#flush-headingSix {
-  animation: accordion 2s 5s both;
+#flush-heading6 {
+  animation: accordion 2s both;
+  animation-delay: 7s;
 }
 
 /*--View Tablet and Desktop--*/

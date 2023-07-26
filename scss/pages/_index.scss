@@ -42,6 +42,9 @@
 
 /*--Section Services--*/
 
+@mixin animation{
+    animation: move-r 2s both;
+}
 @keyframes move-r {
     0% {
         transform: translateX(-100%);
@@ -54,53 +57,11 @@
     }
 }
 
-.one {
-    animation-name: move-r;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-}
-
-.two {
-    animation-name: move-r;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-}
-
-.three {
-    animation-name: move-r;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-}
-
-.four {
-    animation-name: move-r;
-    animation-duration: 3s;
-    animation-delay: 4s;
-    animation-fill-mode: both;
-}
-
-.five {
-    animation-name: move-r;
-    animation-duration: 3s;
-    animation-delay: 5s;
-    animation-fill-mode: both;
-}
-
-.six {
-    animation-name: move-r;
-    animation-duration: 3s;
-    animation-delay: 6s;
-    animation-fill-mode: both;
-}
-
-.seven {
-    animation-name: move-r;
-    animation-duration: 3s;
-    animation-delay: 7s;
-    animation-fill-mode: both;
+@for $i from 1 through 7{
+    .service-#{$i}{
+        @include animation;
+        animation-delay: $i + 1 + s;
+    }
 }
 
 
@@ -145,6 +106,10 @@
 
 @media(min-width:768px) {
 
+    @mixin animation{
+        animation: move-up 2s both;
+    }
+
     @keyframes move-up {
         0%{
             transform: translateY(100%);
@@ -156,6 +121,14 @@
         }
     }
 
+    @for $i from 1 through 7{
+        .service-#{$i}{
+            @include animation;
+            animation-delay: $i + 1 + s;
+        }
+    }
+    
+
     .service-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -166,41 +139,6 @@
         grid-column: 1/4;
     }
     
-    .one{
-        animation-name: move-up;
-        animation-duration: 2s;
-        animation-delay: 2s;
-    }
-    .two{
-        animation-name: move-up;
-        animation-duration: 2s;
-        animation-delay: 3s;
-    }
-    .three{
-        animation-name: move-up;
-        animation-duration: 2s;
-        animation-delay: 4s;
-    }
-    .four{
-        animation-name: move-up;
-        animation-duration: 2s;
-        animation-delay: 5s;
-    }
-    .five{
-        animation-name: move-up;
-        animation-duration: 2s;
-        animation-delay: 6s;
-    }
-    .six{
-        animation-name: move-up;
-        animation-duration: 2s;
-        animation-delay: 7s;
-    }
-    .seven {
-        animation-name: move-up;
-        animation-duration: 2s;
-        animation-delay: 8s;
-    }
 
 }
 

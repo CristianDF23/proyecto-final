@@ -85,6 +85,20 @@
     background-size: 20px 20px;
 }
 
+$inputs: (
+    name: url("../../img/name.ico"),
+    phone: url("../../img/cel.ico"),
+    email: url("../../img/email.ico"),
+    message: url("../../img/coment.ico"),
+);
+
+@each $name, $value in $inputs{
+    .form-input__#{$name}{
+        @include input-area;
+        background-image: $value;
+    }
+}
+
 .form-input {
     width: 100%;
     display: flex;
@@ -92,26 +106,6 @@
     justify-content: center;
     align-items: center;
     gap: 0.6rem;
-
-    &__name {
-        @include input-area;
-        background-image: $icon-name;
-    }
-
-    &__phone {
-        @include input-area;
-        background-image: $icon-tel ;
-    }
-
-    &__email {
-        @include input-area;
-        background-image: $icon-email;
-    }
-
-    &__message {
-        @include input-area;
-        background-image: $icon-msg;
-    }
 
     &__send {
         background-image: $icon-send;

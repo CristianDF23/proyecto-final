@@ -496,14 +496,6 @@ li {
   animation: form 3s both;
 }
 
-.form-input {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.6rem;
-}
 .form-input__name {
   width: 300px;
   padding: 12px 20px 12px 40px;
@@ -515,8 +507,9 @@ li {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url("../img/name.ico");
+  background-image: url("../../img/name.ico");
 }
+
 .form-input__phone {
   width: 300px;
   padding: 12px 20px 12px 40px;
@@ -528,8 +521,9 @@ li {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url("../img/cel.ico");
+  background-image: url("../../img/cel.ico");
 }
+
 .form-input__email {
   width: 300px;
   padding: 12px 20px 12px 40px;
@@ -541,8 +535,9 @@ li {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url("../img/email.ico");
+  background-image: url("../../img/email.ico");
 }
+
 .form-input__message {
   width: 300px;
   padding: 12px 20px 12px 40px;
@@ -554,7 +549,16 @@ li {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url("../img/coment.ico");
+  background-image: url("../../img/coment.ico");
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
 }
 .form-input__send {
   background-image: url("../img/send.ico");
@@ -956,7 +960,7 @@ li {
   background-color: rgba(128, 128, 128, 0.24);
   font-weight: bold;
 }
-.accordion-header img {
+.accordion-header__img {
   display: none;
 }
 .accordion-item {
@@ -983,7 +987,7 @@ li {
   align-items: center;
   gap: 1.5rem;
 }
-.accordion-body p {
+.accordion-body__text {
   width: 90%;
   text-align: start;
   font-size: 1.3rem;
@@ -1046,7 +1050,7 @@ li {
     padding-left: 15px;
     padding-top: 2px;
   }
-  .accordion-header img {
+  .accordion-header__img {
     display: block;
     width: 50px;
     height: 50px;

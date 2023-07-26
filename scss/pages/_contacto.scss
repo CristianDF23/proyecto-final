@@ -86,10 +86,10 @@
 }
 
 $inputs: (
-    name: url("../../img/name.ico"),
-    phone: url("../../img/cel.ico"),
-    email: url("../../img/email.ico"),
-    message: url("../../img/coment.ico"),
+    name: url("../img/name.ico"),
+    phone: url("../img/cel.ico"),
+    email: url("../img/email.ico"),
+    message: url("../img/coment.ico"),
 );
 
 @each $name, $value in $inputs{

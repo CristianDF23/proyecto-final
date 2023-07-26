@@ -86,14 +86,15 @@
 }
 
 $inputs: (
-    name: url("/img/name.ico"),
-    phone: url("/img/cel.ico"),
-    email: url("/img/email.ico"),
-    message: url("/img/coment.ico"),
+    name: url("../img/name.png"),
+    phone: url("../img/cel.png"),
+    email: url("../img/email.png"),
+    message: url("../img/coment.png"),
 );
 
-@each $name, $value in $inputs{
-    .form-input__#{$name}{
+@each $name,
+$value in $inputs {
+    .form-input__#{$name} {
         @include input-area;
         background-image: $value;
     }
@@ -107,8 +108,9 @@ $inputs: (
     align-items: center;
     gap: 0.6rem;
 
+    
     &__send {
-        background-image: $icon-send;
+        background-image: url("../img/send.png");
         background-repeat: no-repeat;
         background-color: transparent;
         color: transparent;

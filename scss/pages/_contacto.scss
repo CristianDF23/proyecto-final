@@ -45,7 +45,6 @@
             align-items: center;
             gap: 0.7rem;
         }
-
     }
 }
 
@@ -70,7 +69,6 @@
     align-items: center;
     animation: form 3s both;
 }
-
 
 @mixin input-area {
     width: 300px;
@@ -108,7 +106,6 @@ $value in $inputs {
     align-items: center;
     gap: 0.6rem;
 
-    
     &__send {
         background-image: url("../img/send.png");
         background-repeat: no-repeat;
@@ -153,7 +150,6 @@ $value in $inputs {
         .icon {
             display: none;
         }
-
     }
 }
 
@@ -224,8 +220,5 @@ $value in $inputs {
                 color: whitesmoke;
             }
         }
-
     }
-
-
 }

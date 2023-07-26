@@ -1,13 +1,16 @@
 /*=====CAROUSEL=====*/
 
-
-
 /*--Animation--*/
 $animationSpeed: 25s;
 
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-250px * 7))
+	}
 }
 
 /*--Styling--*/
@@ -16,10 +19,10 @@ $animationSpeed: 25s;
 	width: 100%;
 	height: 63px;
 	margin-top: 30px;
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 	overflow: hidden;
 	position: relative;
-	
+
 	&::before,
 	&::after {
 		content: "";
@@ -28,7 +31,7 @@ $animationSpeed: 25s;
 		position: absolute;
 		z-index: 2;
 	}
-	
+
 	&::after {
 		right: 0;
 		top: 0;
@@ -39,23 +42,22 @@ $animationSpeed: 25s;
 		left: 0;
 		top: 0;
 	}
-	
+
 	.slider-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
 		width: calc(250px * 14);
 		gap: 1rem;
 	}
-	
+
 	.slide {
 		height: 60px;
 		width: 200px;
 
-		&__img{
+		&__img {
 			width: 100%;
 			height: 100%;
 			filter: grayscale(100%) opacity(40%);
 		}
 	}
 }
-

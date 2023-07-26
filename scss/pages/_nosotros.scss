@@ -1,15 +1,15 @@
 /*=====ABOUT US=====*/
 
-@keyframes opacity{
-    0%{
+@keyframes opacity {
+    0% {
         opacity: 0;
     }
 
-    50%{
+    50% {
         opacity: 0.5;
     }
 
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -30,33 +30,33 @@
 
     &__paragraph {
         border: $shadow-img;
-        background-color:rgba(222, 184, 135, 0.055);
+        background-color: rgba(222, 184, 135, 0.055);
         color: $color-text;
         font-size: 1.3rem;
         font-weight: 500;
         text-align: justify;
         padding: 20px;
-        animation:opacity 3s 1s both;
+        animation: opacity 3s 1s both;
 
-        &--task{
-            animation:opacity 3s 2s both;
+        &--task {
+            animation: opacity 3s 2s both;
         }
 
-        &--vision{
-            animation:opacity 3s 3s both;
+        &--vision {
+            animation: opacity 3s 3s both;
         }
     }
 
-    &__history{
-        animation:opacity 3s 1s both;
+    &__history {
+        animation: opacity 3s 1s both;
     }
 
-    &__task{
-        animation:opacity 3s 2s both;
+    &__task {
+        animation: opacity 3s 2s both;
     }
 
-    &__vision{
-        animation:opacity 3s 3s both;
+    &__vision {
+        animation: opacity 3s 3s both;
     }
 }
 
@@ -69,8 +69,8 @@
     }
 }
 
-@media (min-width:768px){
-    .company__paragraph{
+@media (min-width:768px) {
+    .company__paragraph {
         max-width: 768px;
         text-align: justify;
     }
@@ -93,7 +93,6 @@
             'texto-mision texto-mision texto-vision texto-vision';
         justify-items: center;
         margin: 40px 10px 10px 10px;
-
 
         &__img {
             width: 80%;
@@ -130,7 +129,5 @@
                 grid-area: texto-vision;
             }
         }
-
     }
-
 }

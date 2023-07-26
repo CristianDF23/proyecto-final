@@ -106,7 +106,7 @@ li {
   }
 }
 .front-page {
-  background-image: url("https://unitedworldtransportation.com/wp-content/uploads/2022/08/are-low-rolling-resistance-truck-tires-worth-the-cost.jpg");
+  background-image: url("../img/frontPage.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   filter: opacity(70%);
@@ -303,41 +303,6 @@ li {
     opacity: 1;
   }
 }
-.service-1 {
-  animation: move-r 2s both;
-  animation-delay: 2s;
-}
-
-.service-2 {
-  animation: move-r 2s both;
-  animation-delay: 3s;
-}
-
-.service-3 {
-  animation: move-r 2s both;
-  animation-delay: 4s;
-}
-
-.service-4 {
-  animation: move-r 2s both;
-  animation-delay: 5s;
-}
-
-.service-5 {
-  animation: move-r 2s both;
-  animation-delay: 6s;
-}
-
-.service-6 {
-  animation: move-r 2s both;
-  animation-delay: 7s;
-}
-
-.service-7 {
-  animation: move-r 2s both;
-  animation-delay: 8s;
-}
-
 .service-container {
   margin-top: 30px;
   display: flex;
@@ -362,8 +327,36 @@ li {
 .service__title {
   color: #02204D;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
+}
+.service-1 {
+  animation: move-r 2s both;
+  animation-delay: 2s;
+}
+.service-2 {
+  animation: move-r 2s both;
+  animation-delay: 3s;
+}
+.service-3 {
+  animation: move-r 2s both;
+  animation-delay: 4s;
+}
+.service-4 {
+  animation: move-r 2s both;
+  animation-delay: 5s;
+}
+.service-5 {
+  animation: move-r 2s both;
+  animation-delay: 6s;
+}
+.service-6 {
+  animation: move-r 2s both;
+  animation-delay: 7s;
+}
+.service-7 {
+  animation: move-r 2s both;
+  animation-delay: 8s;
 }
 
 @media (min-width: 500px) {
@@ -416,9 +409,10 @@ li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    column-gap: 0.3rem;
   }
   .service--last {
-    grid-column: 1/4;
+    grid-column: 2/3;
   }
 }
 @media (min-width: 1200px) {
@@ -747,40 +741,10 @@ li {
 /*--Animation Carousel--*/
 @keyframes input {
   0% {
-    transform: translateX(-100%);
+    transform: scaleZ(100%);
   }
   45% {
-    transform: translate(0);
-  }
-  50% {
-    transform: translateX(-50px);
-  }
-  55% {
-    transform: translate(0);
-  }
-  60% {
-    transform: translateX(-40px);
-  }
-  65% {
-    transform: translate(0);
-  }
-  70% {
-    transform: translateX(-30px);
-  }
-  75% {
-    transform: translate(0);
-  }
-  80% {
-    transform: translateX(-20px);
-  }
-  85% {
-    transform: translate(0);
-  }
-  90% {
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: translate(0);
+    transform: scaleZ(0);
   }
 }
 @keyframes price {
@@ -810,7 +774,7 @@ li {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
     margin-top: 40px;
     display: block;
-    animation: input 2s ease-in-out both;
+    animation: input 12s ease-in-out both;
   }
   .carousel-item {
     width: 100%;

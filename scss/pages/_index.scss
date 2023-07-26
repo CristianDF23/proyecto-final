@@ -42,9 +42,10 @@
 
 /*--Section Services--*/
 
-@mixin animation{
+@mixin animation {
     animation: move-r 2s both;
 }
+
 @keyframes move-r {
     0% {
         transform: translateX(-100%);
@@ -56,14 +57,6 @@
         opacity: 1;
     }
 }
-
-@for $i from 1 through 7{
-    .service-#{$i}{
-        @include animation;
-        animation-delay: $i + 1 + s;
-    }
-}
-
 
 .service-container {
     margin-top: 30px;
@@ -90,8 +83,15 @@
     &__title {
         color: $color-title;
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 600;
+    }
+
+    @for $i from 1 through 7 {
+        &-#{$i} {
+            @include animation;
+            animation-delay: $i + 1 + s;
+        }
     }
 }
 
@@ -105,41 +105,39 @@
 /*--View Tablet and Desktop--*/
 
 @media(min-width:768px) {
-
-    @mixin animation{
+    @mixin animation {
         animation: move-up 2s both;
     }
 
     @keyframes move-up {
-        0%{
+        0% {
             transform: translateY(100%);
             opacity: 0;
         }
-        100%{
+
+        100% {
             transform: translateY(0);
             opacity: 1;
         }
     }
 
-    @for $i from 1 through 7{
-        .service-#{$i}{
+    @for $i from 1 through 7 {
+        .service-#{$i} {
             @include animation;
             animation-delay: $i + 1 + s;
         }
     }
-    
 
     .service-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        column-gap: .3rem;
     }
 
     .service--last {
-        grid-column: 1/4;
+        grid-column: 2/3;
     }
-    
-
 }
 
 @media(min-width:1200px) {

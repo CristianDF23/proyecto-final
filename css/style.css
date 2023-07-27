@@ -779,7 +779,7 @@ li {
   .carousel-item {
     width: 100%;
     padding: 30px;
-    margin-left: 50px;
+    transform: translateX(50px);
   }
   .carousel-item img {
     margin-left: 15px;

@@ -34,8 +34,7 @@
 }
 
 .front-page__text {
-    animation-name: move;
-    animation-duration: 2s;
+    animation: move 2s both;
 }
 
 @media(min-width:768px) {
